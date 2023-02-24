@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Effective Solutions for Your Business</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,80 +25,88 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
-        <a href="./index.html" class="header-logo link"
-          ><span>Web</span>Studio</a
-        >
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="" class="header-link link">Studio</a>
-          </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link link">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container main-header">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo link"
+            ><span>Web</span>Studio</a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link">Studio</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link link">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address>
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="header-mal list link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="header-tel list link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <address class="header-adress">
+          <ul class="list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="header-mal list link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="header-tel list link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- основное меню -->
     <main>
       <!-- Hero section-секция 1 -->
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button primary">Order Service</button>
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="hero-button primary">
+            Order Service
+          </button>
+        </div>
       </section>
       <!-- /Hero section-секция 2 -->
       <!-- About section -->
       <section class="about">
-        <!-- h2 потом сховаем в css -->
-        <h2 class="about-titl">Test</h2>
-        <ul class="about-list list">
-          <li>
-            <h3 class="about-title">Strategy</h3>
-            <p class="about-subtitle">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="about-title">Punctuality</h3>
-            <p class="about-subtitle">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="about-title">Diligence</h3>
-            <p class="about-subtitle">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="about-title">Technologies</h3>
-            <p class="about-subtitle">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <!-- h2 потом сховаем в css -->
+          <h2 class="about-titl">Test</h2>
+          <ul class="about-list list">
+            <li>
+              <h3 class="about-title">Strategy</h3>
+              <p class="about-subtitle">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="about-title">Punctuality</h3>
+              <p class="about-subtitle">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="about-title">Diligence</h3>
+              <p class="about-subtitle">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="about-title">Technologies</h3>
+              <p class="about-subtitle">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- секция 3 What are we doing -->
       <section class="desktop">

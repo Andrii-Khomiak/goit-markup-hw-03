@@ -4,12 +4,29 @@
   --accent-color: #4d5ae5;
   --primary-white-color: #ffffff;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
 
 body {
   background: #fff;
   color: var(--title-text-color);
 
   font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
 
 /* основной цвет- color: #2E2F42; */
@@ -29,46 +46,67 @@ body {
 }
 /* /[ховаем подчеркивание */
 .header {
+  background-color: var(--primary-white-color);
+ padding: 24px 0;
+ 
 }
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
 .header-navigation {
+   display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway";
-
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--title-text-color);
 }
 .header span {
   color: var(--accent-color);
 }
 .header-list {
+   display: flex;
+  align-items: center;
+  margin-left: 76px;
 }
 
-.header-item {
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 .header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
   letter-spacing: 0.02em;
-
   color: var(--title-text-color);
+  display: block;
+  padding: 24px, 10px;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
+.header-adress  {
+  
+ margin-left: auto;
+display: flex;
+
+}
+
 .header-mal {
+  display: block;
+  padding-left: 332px;
+  padding-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -78,12 +116,17 @@ body {
 
   color: var(--primary-text-color);
 }
+
 .header-mal:hover,
 .header-mal:focus {
   color: var(--accent-color);
 }
 
 .header-tel {
+ 
+  display: block;
+  padding-left: 40px;
+  padding-top: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -95,14 +138,22 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+.header-inner {
+  
+}
 /* /HEADER */
 
 /* --------------------------HERO------------------------- */
 
 .hero {
   background-color: var(--title-text-color);
+  text-align: center;
 }
 .hero-title {
+  width: 496px;
+  height: ;
+  margin-top: ;
+  margin-left: 478px;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -111,6 +162,8 @@ body {
   color: var(--primary-white-color);
 }
 .hero-button {
+  margin-top: 61px;
+  margin-left: 636px;
   font-family: "Roboto";
   font-style: normal;
   cursor: pointer;
@@ -139,13 +192,18 @@ body {
 
 /* ------------------------------------About-section--------------------------- */
 .about {
+  margin-top: 120px;
+ 
+ 
 }
 .about-titl {
   visibility: hidden;
+
 }
 .about-list {
 }
 .about-title {
+  margin-left: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
