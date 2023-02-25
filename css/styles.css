@@ -47,8 +47,7 @@ body {
 /* /[ховаем подчеркивание */
 .header {
   background-color: var(--primary-white-color);
- padding: 24px 0;
- 
+ padding: 0 24px;
 }
 .main-header {
   display: flex;
@@ -60,6 +59,7 @@ body {
   align-items: center;
 }
 .header-logo {
+  margin-right: 76px;
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -76,13 +76,15 @@ body {
 .header-list {
    display: flex;
   align-items: center;
-  margin-left: 76px;
+  
+  gap: 40px;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 40px;
+.header-item {
+  gap: 40px;
 }
 .header-link {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -96,16 +98,19 @@ body {
   color: var(--accent-color);
 }
 
+
 .header-adress  {
-  
  margin-left: auto;
 display: flex;
-
+}
+.header-contacts {
+  display: flex;
+  padding-bottom: 24px;
 }
 
 .header-mal {
   display: block;
-  padding-left: 332px;
+  margin-left: 332px;
   padding-top: 24px;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +128,7 @@ display: flex;
 }
 
 .header-tel {
- 
+  margin-left: auto;
   display: block;
   padding-left: 40px;
   padding-top: 24px;
@@ -138,9 +143,7 @@ display: flex;
 .header-tel:focus {
   color: var(--accent-color);
 }
-.header-inner {
-  
-}
+
 /* /HEADER */
 
 /* --------------------------HERO------------------------- */
@@ -150,10 +153,10 @@ display: flex;
   text-align: center;
 }
 .hero-title {
+  padding-top: 155px;
+margin-left: 332px;
   width: 496px;
-  height: ;
-  margin-top: ;
-  margin-left: 478px;
+ 
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -161,25 +164,35 @@ display: flex;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
 }
+.hero-container {
+  padding-bottom: 188px;
+}
 .hero-button {
-  margin-top: 61px;
-  margin-left: 636px;
+  display: block;
+ margin: 0 auto;
+ margin-top: 45px;
+ margin-left: 480px;
+ padding: 16px 32px;
+
   font-family: "Roboto";
   font-style: normal;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
+  
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #4d5ae5;
+ background:var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background: var(--accent-color)
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
 }
@@ -192,18 +205,25 @@ display: flex;
 
 /* ------------------------------------About-section--------------------------- */
 .about {
-  margin-top: 120px;
+  text-align: left;
  
- 
+}
+.about-container {
+  padding-top: 120px;
+  text-align: left;
+  padding-bottom: 120px;
 }
 .about-titl {
   visibility: hidden;
 
 }
 .about-list {
+  display: flex;
 }
-.about-title {
-  margin-left: 24px;
+.about-title:not(:last-child) {
+  display: flex;
+
+  margin-right: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -211,6 +231,9 @@ display: flex;
   color: var(--title-text-color);
 }
 .about-subtitle {
+  margin-right: 24px;
+  display: flex;
+  margin-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -219,8 +242,19 @@ display: flex;
 }
 /* --------------------секция 3 What are we doing-------------------- */
 .desktop {
+  
+}
+.desktop-container {
+  text-align: center;
+  display: block;
+  padding-bottom: 120px;
+  
+  
 }
 .desktop-title {
+  padding-left: 403px;
+display: flex;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -228,14 +262,31 @@ display: flex;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  
 }
 .desktop-list {
+  display: flex;
+  padding-top: 72px;
+  gap: 24px;
+align-items: flex-start;
+
 }
+
 /* -----------TEAM---------------- */
 .team {
   background: #f4f4fd;
 }
+.team-container {
+   text-align: center;
+  display: block;
+  padding-bottom: 0;
+  
+}
 .team-headline {
+  padding-top: 120px;
+  padding-left: 480px;
+
+   display: flex;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -243,10 +294,26 @@ display: flex;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  
 }
 .team-list {
+   display: flex;
+   padding-top: 72px;
+   padding-bottom: 120px;
+   gap: 24px;
+   
 }
+
+
+.team-listphoto {
+  background-color: var(--primary-white-color);
+  
+
+}
+
 .team-title {
+  padding-top: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -255,6 +322,8 @@ display: flex;
   color: #2e2f42;
 }
 .team-subtitle {
+  padding-bottom: 8px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -266,7 +335,16 @@ display: flex;
 .footer {
   background: var(--title-text-color);
 }
+.footer-container {
+  padding-top: 100px;
+  
+
+
+  display: block;
+}
 .footer-logo {
+  padding-top: 100px;
+  
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -281,6 +359,11 @@ span {
   color: var(--accent-color);
 }
 .footer-subtitle {
+  padding-bottom: 100px;
+  padding-top: 8px;
+  display: block;
+  width: 264px;
+  margin-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -290,13 +373,36 @@ span {
 /* -------------button-list---------------- */
 .content {
   cursor: pointer;
+  text-align: center;
+  
 }
+.button-container {
+  
+  
+
+  display: inline-block;
+}
+
+
+
 .content-headline {
   visibility: hidden;
+  
 }
 .content-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 72px;
+  padding-top: 96px;
+  padding-left: 286px;
 }
 .content-buttonall {
+  border: 1px solid #E7E9FC;
+border-radius: 4px;
+  display: inline-block;
+  
+  margin-left: px;
+  padding: 12px 24px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -306,7 +412,10 @@ span {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--accent-color);
+  background-color: #F4F4FD;
 }
+
+
 .content-buttonall:hover,
 .content-buttonall:focus {
   color: #ffffff;
@@ -320,16 +429,38 @@ span {
 .team-two {
   visibility: hidden;
   background-color: #ffffff;
+  
+  
 }
-.team-list {
+.list-two {
+  display: block;
+  
+  
 }
-.team-title {
+.img-portfolio {
+  background-color: #f4f4fd;
+    border-bottom: 5px #2e2f42;
+    border: 1px solid #E7E9FC;
+}
+.team-list-two {
+  
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 120px;
+  
+}
+.team-title-two {
+  
+  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
-.team-subtitle {
+.team-subtitle-two {
+  margin-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
