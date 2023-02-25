@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  
 }
 
 /* основной цвет- color: #2E2F42; */
@@ -268,9 +268,11 @@ display: flex;
   display: flex;
   padding-top: 72px;
   gap: 24px;
-align-items: flex-start;
+ }
+ .border-img {
+  border: 1px solid #E7E9FC;
+ }
 
-}
 
 /* -----------TEAM---------------- */
 .team {
@@ -307,8 +309,8 @@ align-items: flex-start;
 
 .team-listphoto {
   background-color: var(--primary-white-color);
-  
-
+  border-radius: 0px 0px 4px 4px;
+border: 1px solid #E7E9FC;
 }
 
 .team-title {
