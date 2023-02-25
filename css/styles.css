@@ -438,9 +438,9 @@ border-radius: 4px;
   
 }
 .img-portfolio {
-  background-color: #f4f4fd;
-    border-bottom: 5px #2e2f42;
-    border: 1px solid #E7E9FC;
+
+    border-bottom: 1px solid #E7E9FC;
+  background: #FFFFFF;
 }
 .team-list-two {
   
