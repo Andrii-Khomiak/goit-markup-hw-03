@@ -235,6 +235,7 @@ border: 0px;
 }
 .about-list {
   display: flex;
+  gap: 24px;
     
 }
 .about-title:not(:last-child) {
@@ -248,7 +249,7 @@ border: 0px;
   color: var(--title-text-color);
 }
 .about-subtitle {
-  margin-right: 24px;
+  
   display: flex;
   margin-top: 8px;
   font-weight: 400;
@@ -259,7 +260,7 @@ border: 0px;
 }
 /* --------------------секция 3 What are we doing-------------------- */
 .desktop {
-  padding: 120px 0;
+ 
   
 }
 .desktop-container {
@@ -308,7 +309,6 @@ display: block;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-top: 120px;
 }
 .team-list {
   margin: auto;
@@ -384,12 +384,11 @@ span {
 /* -------------button-list---------------- */
 .content {
   padding-bottom: 120px;
-  
+  padding-top: 120px;
   
 }
 .button-container {
-  align-items: center;
-  margin-top: 96px;
+  
 }
 
 
@@ -446,6 +445,7 @@ border-radius: 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
+border: 1px solid var(--accent-color);
 }
 
 /* ----------------OUR TEAM--------------------- */
